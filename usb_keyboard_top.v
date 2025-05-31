@@ -102,21 +102,21 @@ usbfs_core_top #(
         176'h0
     } ),
     .DESCRIPTOR_CONFIG  ( {  // 512 bytes available
-//        72'h09_02_22_00_01_01_00_80_64,        // configuration descriptor   HID Keyboard sends 
+//        72'h09_02_22_00_01_01_00_80_64,        // configuration descriptor 
 //        72'h09_04_00_00_01_03_01_01_00,        // interface descriptor
 //        72'h09_21_11_01_00_01_22_3f_00,        // HID descriptor
 //        56'h07_05_81_03_08_00_64,              // endpoint descriptor (IN)
 //        3824'h0
-//        72'h09_02_22_00_01_01_00_80_64,        // configuration descriptor   HID Keyboard sends 
+//        72'h09_02_22_00_01_01_00_80_64,        // configuration descriptor    
 //        72'h09_04_00_00_01_03_01_01_00,        // interface descriptor
 //        72'h09_21_11_01_00_01_22_3f_00,        // HID descriptor
 //        56'h07_05_81_03_08_00_01,              // endpoint descriptor (IN)
 //        3824'h0
-          72'h09_02_31_00_01_01_00_80_FA,    //DEFAULT II
+          72'h09_02_31_00_01_01_00_80_FA,   
           72'h09_04_00_00_02_FF_5D_01_00,
          136'h11_21_10_01_01_25_81_14_03_03_03_04_13_01_08_03_03,
           56'h07_05_81_03_20_00_01,
-          56'h07_05_01_03_20_00_01, // Input Integrity sends 49 bytes here
+          56'h07_05_01_03_20_00_01, 
         3704'h0 
     } ),
     .EP81_MAXPKTSIZE    ( 10'h14           ), //( 10'h08           ), //USB packet length? Will need to change this to match the XBOX360 controller data
